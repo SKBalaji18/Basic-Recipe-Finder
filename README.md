@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Recipe Ideas Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **Recipe Ideas** application is designed to help **Taylor**, a busy professional, quickly find meal recipes based on the ingredients they have, the time they have available to cook, and their preferences. Whether Taylor is looking for quick meals, meals with certain ingredients, or specific types of recipes, this application helps in providing personalized meal ideas and recipe instructions.
 
-In the project directory, you can run:
+The application will interact with the **TheMealDB API** to fetch recipes based on user input. Taylor can input ingredients they have at hand, or their preferences, and get a list of suggested recipes along with detailed instructions.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Recipe Search by Ingredient**: Taylor can enter ingredients they have in their pantry, and the app will fetch recipes based on those ingredients.
+- **Customizable Filters**: Taylor can filter recipes based on categories like "time to cook", "meal type" (e.g., vegetarian, vegan, chicken), or any other dietary preferences.
+- **Quick Recipe Access**: The app will display quick recipes with preparation time for users who are short on time.
+- **Personalized Recommendations**: The app will allow Taylor to specify what they are in the mood for (e.g., "comfort food" or "healthy"), and recommend recipes accordingly.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## User Persona
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Taylor: The Busy Professional
 
-### `npm run build`
+- **Name**: Taylor
+- **Occupation**: Busy Professional
+- **Goals**:
+  - Wants quick, easy meal options that match what ingredients they already have.
+  - Needs recipe suggestions based on mood, time, and available ingredients.
+  - Sometimes has limited time to cook, so needs meals that take less than 30 minutes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Application Functionality
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The app will consist of the following features:
 
-### `npm run eject`
+### 1. **Recipe Search by Ingredient**
+- **Input**: User (Taylor) will enter a specific ingredient (e.g., chicken, tomato, pasta).
+- **Output**: A list of recipes containing that ingredient from the **TheMealDB API**.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 2. **Filters for Time and Meal Type**
+- **Input**: User can filter recipes based on the following options:
+  - **Time**: How much time Taylor has to cook (e.g., 30 minutes or less).
+  - **Meal Type**: Type of meal (e.g., breakfast, lunch, dinner).
+  - **Dietary Preferences**: Options like vegetarian, low-carb, or high-protein.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 3. **Personalized Recipe Suggestions**
+- **Input**: User can indicate what they feel like eating (e.g., comfort food, light salad).
+- **Output**: A list of recipes that match the mood.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## API to Use
 
-## Learn More
+We will be using the **TheMealDB API** to fetch meal recipes. The API provides a variety of meal-related data, and we'll specifically use the `https://www.themealdb.com/api/json/v1/1/filter.php?i={ingredient}` endpoint to fetch recipes based on ingredients.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
